@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Border Radius Previewer</title>
+	</head>
+	<body>
+		<h1>Border Radius Previewer</h1>
+
+		<div
+			id="box"
+			style="
+				width: 250px;
+				height: 250px;
+				background-color: lightgreen;
+				margin: 20px auto;
+				border: 2px solid black;
+			"
+		></div>
+
+		<div style="text-align: center">
+			<label>
+				Top Left (Horizontal): <input type="number" id="top_left" value="0"
+			/></label>
+
+			<label>
+				Top Right (Horizontal): <input type="number" id="top_right" value="0"
+			/></label>
+
+			<label
+				>Bottom Left (Horizontal):
+				<input type="number" id="bottom_left" value="0"
+			/></label>
+
+			<label
+				>Bottom Right (Horizontal):
+				<input type="number" id="bottom_right" value="0" /></label
+			><br />
+
+			<label>
+				Top Left (Vertical):
+				<input type="number" id="top_left_vertical" value="0" />
+			</label>
+
+			<label>
+				Top Right (Vertical):
+				<input type="number" id="top_right_vertical" value="0" />
+			</label>
+
+			<label>
+				Bottom Left (Vertical):
+				<input type="number" id="bottom_left_vertical" value="0" />
+			</label>
+
+			<label>
+				Bottom Right (Vertical):
+				<input type="number" id="bottom_right_vertical" value="0" />
+			</label>
+		</div>
+
+		<p style="text-align: center; margin-top: 20px" id="css_code">
+			border-radius: 0px 0px 0px 0px 0px 0px 0px 0px;
+		</p>
+
+		<div style="text-align: center">
+			<button id="copy_btn">Copy CSS</button>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
